@@ -3,12 +3,11 @@ import shutil
 from pathlib import Path
 from tkinter.messagebox import showinfo
 import tkinter.filedialog as fd
+import tkinter as tk
+from base_app import determining_date, create_progressbar, create_children_window
 
-from base_app import determining_date, create_progressbar
 
-
-def copy_updates_from_flash(children_window_determining_letter_flash, letter_flash, button_set_path,
-                            tk=None):
+def copy_updates_from_flash(children_window_determining_letter_flash, letter_flash, button_set_path):
     directory = fd.askdirectory(title="Открыть папку", initialdir="/")
     if directory:
         label_flash = tk.Label(children_window_determining_letter_flash,
@@ -45,15 +44,12 @@ def copy_updates_from_flash(children_window_determining_letter_flash, letter_fla
         children_window_determining_letter_flash.destroy()
 
 
-def start_process_copy_updates_from_flash(tk=None):
-    children_window_determining_letter_flash = tk.Toplevel()
-    children_window_determining_letter_flash.title('Копирование на флешку')
-    children_window_determining_letter_flash.geometry('300x150+800+300')
+def start_process_copy_updates_from_flash():
+    children_window_determining_letter_flash = create_children_window('Копирование на флешку')
     letter_flash = tk.Label(children_window_determining_letter_flash,
                             text='Определение буквы флешки',
                             font='Calibri 13 bold')
     letter_flash.grid(row=0, column=0)
-    #children_window_determining_letter_flash.grid_columnconfigure(0, weight=1)
 
     children_window_determining_letter_flash.update()
     button_set_path = tk.Button(children_window_determining_letter_flash, text='Задать',
@@ -63,6 +59,4 @@ def start_process_copy_updates_from_flash(tk=None):
                                                         letter_flash, button_set_path))
 
     button_set_path.grid(row=3, column=0, padx=20, pady=5)
-    children_window_determining_letter_flash.grid_columnconfigure(0, weight=1)
     children_window_determining_letter_flash.update()
-

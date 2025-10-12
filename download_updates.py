@@ -2,13 +2,14 @@ import os
 from datetime import time, date, timedelta
 from pathlib import Path
 from tkinter.messagebox import showinfo
-
+import tkinter as tk
 import rarfile
+import time
 
-from base_app import download_arch, create_progressbar, get_data_archive, connect_to_ftp
+from base_app import download_arch, create_progressbar, get_data_archive, connect_to_ftp, create_children_window
 
 
-def download_updates(tk=None):
+def download_updates():
     path_ftp_update = 'updates//3000'
     ftp_server = connect_to_ftp()
     arch_list_on_disc = []
@@ -49,9 +50,7 @@ def download_updates(tk=None):
     else:
         showinfo('Download', f'Будет скачано {len(list_from_download)} архивов')
     print(list_from_download)
-    children_window_download_updates_archives = tk.Toplevel()
-    children_window_download_updates_archives.title('Работа с файлами')
-    children_window_download_updates_archives.geometry('300x300+800+300')
+    children_window_download_updates_archives = create_children_window('Работа с файлами')
     action_arch_label = tk.Label(children_window_download_updates_archives,
                                  text='Действие', font='Calibri 13 bold')
     action_arch_label.grid(row=0, column=0)
@@ -61,7 +60,6 @@ def download_updates(tk=None):
     size_arch_label = tk.Label(children_window_download_updates_archives,
                                text='Размер', font='Calibri 13 bold')
     size_arch_label.grid(row=2, column=0)
-    children_window_download_updates_archives.grid_columnconfigure(0, weight=1)
     count = 0
     max_len = len(list_from_download)
     progressbar_download = create_progressbar(children_window_download_updates_archives,

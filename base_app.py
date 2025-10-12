@@ -3,6 +3,7 @@ from datetime import datetime
 from ftplib import FTP, error_perm
 from tkinter import ttk
 from tkinter.messagebox import showinfo, showerror
+import tkinter as tk
 
 
 def connect_to_ftp():
@@ -41,3 +42,9 @@ def create_progressbar(master, val, max_val, row, column):
     progressbar.grid(row=row, column=column)
     return progressbar
 
+def create_children_window(name):
+    children_window = tk.Toplevel()
+    children_window.title(f'{name}')
+    children_window.geometry('300x300+800+300')
+    children_window.grid_columnconfigure(0, weight=1)
+    return children_window

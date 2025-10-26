@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3eb24212-1704-465b-8164-cccfb792ef0f" name="Changes" comment="Minor edits">
-      <change afterPath="$PROJECT_DIR$/updates_for_sud.py" afterDir="false" />
+    <list default="true" id="3eb24212-1704-465b-8164-cccfb792ef0f" name="Changes" comment="add modul updates for sud">
+      <change afterPath="$PROJECT_DIR$/delete_old_archives.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/copy_updates_from_flash.py" beforeDir="false" afterPath="$PROJECT_DIR$/copy_updates_from_flash.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,17 +44,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.main.executor": "Run",
-    "Python.temp.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "development",
-    "last_opened_file_path": "E:/Auto_upd_consplus"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.temp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Auto_upd_consplus&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Auto_upd_consplus" />
@@ -148,13 +146,22 @@
       <option name="project" value="LOCAL" />
       <updated>1760287671193</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add modul updates for sud">
+      <option name="closed" value="true" />
+      <created>1761150601801</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761150601801</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update structure project" />
     <MESSAGE value="Minor edits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor edits" />
+    <MESSAGE value="add modul updates for sud" />
+    <option name="LAST_COMMIT_MESSAGE" value="add modul updates for sud" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -163,11 +170,6 @@
           <url>file://$PROJECT_DIR$/download_updates.py</url>
           <line>21</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/updates_for_sud.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

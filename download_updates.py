@@ -49,7 +49,6 @@ def download_updates():
         showinfo('Download', f'Будет скачано {len(list_from_download)} архива')
     else:
         showinfo('Download', f'Будет скачано {len(list_from_download)} архивов')
-    print(list_from_download)
     children_window_download_updates_archives = create_children_window('Работа с файлами')
     action_arch_label = tk.Label(children_window_download_updates_archives,
                                  text='Действие', font='Calibri 13 bold')

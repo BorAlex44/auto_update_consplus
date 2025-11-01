@@ -60,4 +60,3 @@ def start_process_copy_updates_from_flash():
 
     button_set_path.grid(row=3, column=0, padx=20, pady=5)
     children_window_determining_letter_flash.update()
-

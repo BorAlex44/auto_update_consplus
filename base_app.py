@@ -1,5 +1,5 @@
 import os
-from datetime import datetime, date
+from datetime import datetime
 from ftplib import FTP, error_perm
 from tkinter import ttk
 from tkinter.messagebox import showinfo, showerror

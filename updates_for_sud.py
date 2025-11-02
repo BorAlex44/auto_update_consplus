@@ -5,7 +5,6 @@ import tkinter.filedialog as fd
 from datetime import datetime, timedelta
 from pathlib import Path
 from tkinter.messagebox import showinfo
-
 from base_app import create_children_window, determining_date, create_progressbar
 
 
@@ -28,7 +27,6 @@ def updates_for_sud(children_window_updates_for_sud, label_where_from, label_whe
             last_data = data_file
         if data_file < data_delete:
             os.remove(os.path.join(path_where_copy, file))
-    print(last_data)
     count = 0
     max_len = len(os.listdir(path_where_from_copy))
     progressbar_copy_updates = create_progressbar(

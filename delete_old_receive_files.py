@@ -1,6 +1,5 @@
 import os
 from datetime import datetime, timedelta
-
 from base_app import create_progressbar, create_children_window, determining_date
 from pathlib import Path
 from tkinter.messagebox import showinfo
@@ -12,8 +11,6 @@ def delete_old_files(children_delete_old_receive_files,
                      letter_path, button_star_delete):
     path_delete_old_files = Path(f'{letter_path["text"]}')
     data_delete = (datetime.now() - timedelta(30)).date()
-    print(path_delete_old_files)
-    print(data_delete)
     button_star_delete.destroy()
     count = 0
     max_len = len(os.listdir(path_delete_old_files))

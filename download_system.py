@@ -1,7 +1,5 @@
 import os
-from datetime import datetime, timedelta
-
-from base_app import create_progressbar, create_children_window, get_data_archive, connect_to_ftp, download_arch
+from base_app import create_children_window, connect_to_ftp, download_arch
 from pathlib import Path
 from tkinter.messagebox import showinfo, showerror
 import tkinter.filedialog as fd

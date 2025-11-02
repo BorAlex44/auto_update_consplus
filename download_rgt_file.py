@@ -1,8 +1,6 @@
 import os
 from tkinter.messagebox import showerror, showinfo
-
 from base_app import connect_to_ftp
-
 
 def download_rgt_file():
     ftp_server = connect_to_ftp()

@@ -5,7 +5,6 @@ from tkinter.messagebox import showinfo
 import tkinter as tk
 import rarfile
 import time
-
 from base_app import download_arch, create_progressbar, get_data_archive, connect_to_ftp, create_children_window
 
 
@@ -32,7 +31,6 @@ def download_updates():
     print(last_data)
     ftp_server.cwd(path_ftp_update)
     arch_update_list = ftp_server.nlst()
-    print(arch_update_list)
     list_from_download = []
     for arch in arch_update_list:
         data_arch = get_data_archive(arch)

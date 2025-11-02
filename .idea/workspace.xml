@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3eb24212-1704-465b-8164-cccfb792ef0f" name="Changes" comment="add modul delete old archives">
-      <change afterPath="$PROJECT_DIR$/delete_old_receive_files.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/download_system.py" afterDir="false" />
+    <list default="true" id="3eb24212-1704-465b-8164-cccfb792ef0f" name="Changes" comment="add modul download new directory system">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/base_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/copy_updates_from_flash.py" beforeDir="false" afterPath="$PROJECT_DIR$/copy_updates_from_flash.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delete_old_archives.py" beforeDir="false" afterPath="$PROJECT_DIR$/delete_old_archives.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/download_updates.py" beforeDir="false" afterPath="$PROJECT_DIR$/download_updates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761493505734</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add modul download new directory system">
+      <option name="closed" value="true" />
+      <created>1762015463840</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762015463840</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -175,7 +177,8 @@
     <MESSAGE value="Minor edits" />
     <MESSAGE value="add modul updates for sud" />
     <MESSAGE value="add modul delete old archives" />
-    <option name="LAST_COMMIT_MESSAGE" value="add modul delete old archives" />
+    <MESSAGE value="add modul download new directory system" />
+    <option name="LAST_COMMIT_MESSAGE" value="add modul download new directory system" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
